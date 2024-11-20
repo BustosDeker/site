@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container__menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li class="logo">
+                            <a href="index.html">
+                                <h1><img src="img/111-removebg-preview.png" alt=""></h1>
+                            </a>
+                        </li>
+                        <li class="search-box">
+                            <form>
+                                <input type="text" name="search" id="srch" placeholder="Search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
+                        <li><a href="#"><b>Explorar</b></a>
+                            <ul>
+                                <li><a href="#popular">Popular</a></li>
+                                <li><a href="#recientes">Recientes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generos.html"><b>Generos</b></a>
+                        </li>
+                        <li><a href="login.html"><b>Iniciar Sesión</b></a></li>
+                        <li class="redes">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li> 
+                        
+                    </ul>
+                </nav>
+            </div>            
+        </div>
+
+        <div class="header-content container">  
+            <div class="header-1">
+                <img src="img/abc-removebg-preview.png" alt="">
+                <a href="#" class="btn-2" id="btn-ver-ahora">Ver ahora</a>
+                <div id="video-container" class="hidden">
+                    <video id="video" controls>
+                        <source src="video/rap-Itachi.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <script src="js/video.js"></script>
+            </div>
+            <div class="header-2">
+                <h1>Los mejores <br> animes </h1>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="animes container">
+        <h2 id="popular">POPULAR</h2>
+        <hr>
+
+        <div class="box-container-1">
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/a.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/b.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/c.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/d.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/e.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/f.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/g.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="img/h.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more" id="load-more-1">Cargar más</div>
+
+    </section>
+
+
+    <section class="animes container">
+        <h2 id="recientes">RECIENTES</h2>
+        <hr>
+
+        <div class="box-container-2">
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/ii.jpeg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/j.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/k.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/l.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/m.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/n.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/o.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="img/aa.jpg" alt="">
+                    <h3>Anime HD</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more" id="load-more-2">Cargar más</div>
+
+    </section>
+     
+    <script src="js/index.js"></script>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="#">Explorar</a></li>
+                    <li><a href="generos.html">Generos</a></li>
+                    <li><a href="login.html">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p class="footerBottom">Copyright &copy;2023; Designed by <span class="designer">BUSTOS'S ANIME</span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/generos.css">
+</head>
+<body>  
+    <header>
+        <header class="header">
+            <div class="container__menu">
+                <div class="menu">
+                    <input type="checkbox" id="check__menu">
+                    <label for="check__menu" id="label__check">
+                        <i class="fas fa-bars icon__menu"></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li class="logo">
+                                <a href="index.html">
+                                    <h1><img src="img/111-removebg-preview.png" alt=""></h1>
+                                </a>
+                            </li>
+                            <li class="search-box">
+                                <form>
+                                    <input type="text" name="search" id="srch" placeholder="Search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </li>
+                            <li><a href="#"><b>Generos</b></a>
+                                <ul>
+                                    <li><a href="#aventura">Aventura</a></li>
+                                    <li><a href="#comedia">Comedia</a></li>
+                                    <li><a href="#isekai">Isekai</a></li>
+                                    <li><a href="#romance">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="login.html"><b>Iniciar Sesión</b></a></li>
+                            <li class="redes">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </li>  
+                        </ul>
+                    </nav>
+                </div>            
+            </div>
+    </header>
+   
+    <main>
+        <div class="carousel">
+            <h2 id="aventura">AVENTURA</h2>
+            <hr>
+            <div class="slick-list" id="slick-list-aventura">
+                <button class="slick-arrow slick-prev" data-button="prev" onclick="app.processButton(event, 'aventura')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M15 20L0 10 15 0z"></path>
+                    </svg>
+                </button>
+                <div class="slick-track" id="track-aventura">
+                    <div class="slick"><a href="#"><img src="img/a.jpg" alt="Image">
+                        <h4><small>NARUTO T1</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/b.jpg" alt="Image">
+                        <h4><small>ONE PUNCH MAN T1</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/c.jpg" alt="Image">
+                        <h4><small>NORAGAMI T2</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/d.jpg" alt="Image">
+                        <h4><small>PARASYTE</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/e.jpg" alt="Image">
+                        <h4><small>HUNTER X HUNTER</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/f.jpg" alt="Image">
+                        <h4><small>Mahouka Koukou no Rettousei T2</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/g.jpg" alt="Image">
+                        <h4><small>YOUR NAME</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/h.jpg" alt="Image">
+                        <h4><small>FULL METAL ALCHEMIST</small></h4></a></div>
+                </div>
+                <button class="slick-arrow slick-next" data-button="next" onclick="app.processButton(event, 'aventura')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M5 0L20 10 5 20z"></path>
+                    </svg>
+                </button>
+            </div>
+            <h2 id="comedia">COMEDIA</h2>
+            <hr>
+            <div class="slick-list" id="slick-list-comedia">
+                <button class="slick-arrow slick-prev" data-button="prev" onclick="app.processButton(event, 'comedia')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M15 20L0 10 15 0z"></path>
+                    </svg>
+                </button>
+                <div class="slick-track" id="track-comedia">
+                    <div class="slick"><a href="#"><img src="img/aa.jpg" alt="Image">
+                        <h4><small>NANATSU NO TAIZAI</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/bb.jpe" alt="Image">
+                        <h4><small>BLEACH</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/cc.jpg" alt="Image">
+                        <h4><small>BLACK CLOVER</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/dd.jpg" alt="Image">
+                        <h4><small>PLUNDERER</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/ee.jpe" alt="Image">
+                        <h4><small>MUSHOKO TENSEI T2</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/f.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/g.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/h.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                </div>
+                <button class="slick-arrow slick-next" data-button="next" onclick="app.processButton(event, 'comedia')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M5 0L20 10 5 20z"></path>
+                    </svg>
+                </button>
+            </div>
+            <h2 id="isekai">ISEKAI</h2>
+            <hr>
+            <div class="slick-list" id="slick-list-isekai">
+                <button class="slick-arrow slick-prev" data-button="prev" onclick="app.processButton(event, 'isekai')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M15 20L0 10 15 0z"></path>
+                    </svg>
+                </button>
+                <div class="slick-track" id="track-isekai">
+                    <div class="slick"><a href="#"><img src="img/ff.jpg" alt="Image">
+                        <h4><small>OVERLORD T1</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/gg.jpe" alt="Image">
+                        <h4><small>KONOSUBA T3</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/ii.jpeg" alt="Image">
+                        <h4><small>FAIRY TAIL</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/jj.jpg" alt="Image">
+                        <h4><small>ISEKAI MAO TO SHOUKAN SHOUJO</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/mm.jpg" alt="Image">
+                        <h4><small>Isekai de Cheat Skill wo Te ni Shita Ore wa</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/f.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/g.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/h.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                </div>
+                <button class="slick-arrow slick-next" data-button="next" onclick="app.processButton(event, 'isekai')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M5 0L20 10 5 20z"></path>
+                    </svg>
+                </button>
+            </div>
+            <h2 id="romance">ROMANCE</h2>
+            <hr>
+            <div class="slick-list" id="slick-list-romance">
+                <button class="slick-arrow slick-prev" data-button="prev" onclick="app.processButton(event, 'romance')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                       <path fill="currentColor" d="M15 20L0 10 15 0z"></path>
+                    </svg>
+                </button>
+                <div class="slick-track" id="track-romance">
+                    <div class="slick"><a href="#"><img src="img/l.jpg" alt="Image">
+                        <h4><small>POKEMON T1</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/ll.jpg" alt="Image">
+                        <h4><small>EVANGELION</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/j.jpg" alt="Image">
+                        <h4><small>SPY X FAMILY</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/o.jpg" alt="Image">
+                        <h4><small>TOKYO GHOUL</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/m.jpg" alt="Image">
+                        <h4><small>TENSEI SHITARA SLIME DATTA KEN</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/f.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/g.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                    <div class="slick"><a href="#"><img src="img/h.jpg" alt="Image">
+                        <h4><small>Share Your Message</small></h4></a></div>
+                </div>
+                <button class="slick-arrow slick-next" data-button="next" onclick="app.processButton(event, 'romance')">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M5 0L20 10 5 20z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script defer src="js/generos.js"></script>
+    </main>
+</body>
+</html>

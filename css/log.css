@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-image: url(../img/36.jpg);
+    font-family: "Bebas Neue", cursive;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Contenedor del menú */
+.container__menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: rgba(14, 14, 14, 0.653);
+    padding: 0 20px;
+    position: fixed; /* Fija el menú en la parte superior */
+}
+
+nav {
+    width: 100%;
+}
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid cadetblue;
+}
+
+
+/* Logo */
+
+
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+
+/* Caja de búsqueda */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.container__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    margin-left: auto;
+}
+
+.redes {
+    margin-left: 20px;
+}
+
+/*login de usuario*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.contenedor {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al principio del contenedor */
+    min-height: 100vh;
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 30px 20px;
+    height: 560px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgba(255, 220, 220, 0.406);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    margin-top: 120px; /* Ajusta este valor para mover la caja hacia abajo si es necesario */
+}
+
+.caja-login {
+    top: 10px;
+    padding: 5px;
+    position: absolute;
+    width: 85%;
+    left: 27px;
+    transition: .5s ease-in-out;
+}
+
+.caja-registro {
+    position: absolute;
+    width: 85%;
+    right: -350px;
+    transition: .5s ease-in-out;
+}
+
+.encabezado-superior {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.encabezado-superior h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.grupo-entrada {
+    width: 100%;
+}
+
+.campo-entrada {
+    margin: 12px 0;
+    position: relative;
+}
+
+.caja-entrada {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: #040404;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 45px 0 20px;
+    background: rgba(224, 223, 223, 0.6);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+
+.campo-entrada label {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+}
+
+.caja-entrada:focus ~ label,
+.caja-entrada:valid ~ label {
+    top: 2px;
+    font-size: 10px;
+    color: #c12828;
+    font-weight: 500;
+}
+
+.recordar {
+    display: flex;
+    font-size: 13px;
+    margin: 12px 0 30px 0;
+    color: #000000;
+}
+
+.check {
+    margin-right: 8px;
+    width: 14px;
+}
+
+.boton-entrada {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: #bc6202;
+    color: #fff;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.144);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.boton-entrada:hover {
+    background: #db3e00;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+}
+
+.olvidar {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.olvidar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cambiar {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    width: 85%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cambiar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#btn {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 145px;
+    height: 50px;
+    background: #cccccd;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in-out;
+}
+
+.area-ojo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.caja-ojo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#ojo,
+#ojo-2 {
+    opacity: 1;
+}
+
+#ojo-tachado,
+#ojo-tachado-2 {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 760px) {
+    
+    .search-box input {
+        width: 350px;
+    }
+
+    .search-box button {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scale(0.9);
+        background: green;
+        color: #fff;
+    }
+
+    .redes{
+        display: none;
+    }
+    
+    
+    .caja {
+        margin-top: 120px;
+    }
+
+    #btn {
+        position: absolute;
+        width: 153px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

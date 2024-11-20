@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="css/log.css">
+</head>
+<body>
+    <header>
+        <div class="container__menu">
+                <nav>
+                    <ul>
+                        <li class="logo">
+                            <a href="index.html">
+                                <h1><img src="img/111-removebg-preview.png" alt=""></h1>
+                            </a>
+                        </li>
+                        <li class="search-box">
+                            <form>
+                                <input type="text" name="search" id="srch" placeholder="Search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
+                        
+                        <li class="redes">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>  
+                    </ul>
+                </nav>          
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="caja">
+                <div class="caja-login" id="login">
+                    <div class="encabezado-superior">
+                        <h3>¡Hola de nuevo!</h3>
+                        <small>Estamos felices de tenerte de vuelta.</small>
+                    </div>
+                    <form class="grupo-entrada">
+                        <div class="campo-entrada">
+                            <input type="text" class="caja-entrada" id="logEmail" required>
+                            <label for="logEmail">Correo electrónico</label>
+                        </div>
+                        <div class="campo-entrada">
+                            <input type="password" class="caja-entrada" id="logPassword" required>
+                            <label for="logPassword">Contraseña</label>
+                            <div class="area-ojo">
+                                <div class="caja-ojo" onclick="mostrarContraseñaLogin()">
+                                    <i class="fa-regular fa-eye" id="ojo"></i>
+                                    <i class="fa-regular fa-eye-slash" id="ojo-tachado"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recordar">
+                            <input type="checkbox" id="formCheck" class="check">
+                            <label for="formCheck">Recuérdame</label>
+                        </div>
+                        <div class="campo-entrada">
+                            <input type="submit" class="boton-entrada" value="Iniciar Sesión" required>
+                        </div>
+                        <div class="olvidar">
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+                <!---------------------------- register --------------------------------------->
+                <div class="caja-registro" id="register">
+                    <div class="encabezado-superior">
+                        <h3>¡Regístrate ahora!</h3>
+                        <small>Estamos felices de tenerte con nosotros.</small>
+                    </div>
+                    <form class="grupo-entrada">
+                        <div class="campo-entrada">
+                            <input type="text" class="caja-entrada" id="regUsername" required>
+                            <label for="regUsername">Nombre de usuario</label>
+                        </div>
+                        <div class="campo-entrada">
+                            <input type="text" class="caja-entrada" id="regEmail" required>
+                            <label for="regEmail">Correo electrónico</label>
+                        </div>
+                        <div class="campo-entrada">
+                            <input type="password" class="caja-entrada" id="regPassword" required>
+                            <label for="regPassword">Contraseña</label>
+                            <div class="area-ojo">
+                                <div class="caja-ojo" onclick="mostrarContraseñaRegistro()">
+                                    <i class="fa-regular fa-eye" id="ojo-2"></i>
+                                    <i class="fa-regular fa-eye-slash" id="ojo-tachado-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recordar">
+                            <input type="checkbox" id="formCheck2" class="check">
+                            <label for="formCheck2">Recuérdame</label>
+                        </div>
+                        <div class="campo-entrada">
+                            <input type="submit" class="boton-entrada" value="Regístrate" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="cambiar">
+                    <a href="#" class="login active" onclick="iniciarSesion()">Iniciar Sesión</a>
+                    <a href="#" class="registro" onclick="registrarse()">Registrarse</a>
+                    <div class="boton-activo" id="btn"></div>
+                </div>
+            </div>
+        </div>
+    <script src="js/script.js"></script>                
+    </main>
+</body>
+</html>
